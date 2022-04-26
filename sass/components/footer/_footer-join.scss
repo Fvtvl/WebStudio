@@ -1,0 +1,50 @@
+.join {}
+
+.join__title {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
+
+    color: $Text-main-white;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+// tablet
+   @media screen and (min-width: 768px) {
+    margin-top: 65px;
+}
+// desktop
+    @media screen and (min-width: 1170px) {
+    margin-top: 72px;
+    text-align: start;
+}
+}
+
+.footer__media {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+    justify-content: center;
+
+// tablet
+@media screen and (min-width: 768px) {
+    margin-bottom: 102px;
+}
+// desktop
+    @media screen and (min-width: 1170px) {
+    margin-bottom: 0;
+}
+}
+
+.media__item--grey {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.media__link--white {
+    color: $Text-main-white;
+}

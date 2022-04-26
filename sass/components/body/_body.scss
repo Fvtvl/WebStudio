@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+
+    background-color: &bgc-main-white;
+
+    &.modal-open {
+        overflow: hidden;
+
+    }
+}
+

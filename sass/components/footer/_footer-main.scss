@@ -1,0 +1,108 @@
+.footer-main {
+    @extend %list;
+    text-align: center;
+
+// tablet
+   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+}
+// desktop
+    @media screen and (min-width: 1170px) {
+    text-align: start;
+    display: flex;
+}
+}
+
+.page-footer {
+    height: 603px;
+    background-color: $bgc-footer-dgrey;
+
+// tablet
+   @media screen and (min-width: 768px) {
+    height: 463px;
+}
+// desktop
+    @media screen and (min-width: 1170px) {
+    height: 252px;
+}
+}
+
+.page-footer__logo__main {
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    display: inline-block;
+    color: $Text-main-white;
+
+// tablet
+@media screen and (min-width: 768px) {
+margin-left: 115px;
+}
+// desktop
+    @media screen and (min-width: 1170px) {
+margin-left: 0;
+}
+}
+
+.adress {
+    min-width: 232px;
+
+// tablet
+   @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-left: 76px;
+}
+// desktop
+    @media screen and (min-width: 1170px) {
+        margin-right: 70px;
+        margin-left: 0px;
+}
+}
+
+.address__text {
+    margin: 0;
+
+    color: $Text-main-white;
+
+    font-weight: 400;
+    Font-size: 14px;
+    Line-height: 1.7;
+    font-style: normal;
+}
+
+.footer-nav {
+    @extend %list;
+}
+
+.footer-nav__item {
+    margin-top: 8px;
+
+// tablet
+@media screen and (min-width: 768px) {
+    margin-left: 115px;
+}
+// desktop
+    @media screen and (min-width: 1170px) {
+        margin-left: 0;
+}
+}
+
+.footer-nav__link {
+    display: block;
+    text-decoration: none;
+    
+    color: $text-secondary-grey;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+    letter-spacing: 0.03em;
+
+    &:active, &:focus, &:hover {
+        color: $Logo-accent;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

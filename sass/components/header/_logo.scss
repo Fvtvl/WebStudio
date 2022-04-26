@@ -1,0 +1,51 @@
+/* логотип*/
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+
+   // tablet
+   @media screen and (min-width: 768px) {
+        height: 80px;
+        display: flex;
+    }
+// desktop
+    @media screen and (min-width: 1170px) {
+        height: 80px;
+        display: flex;
+        
+    }
+}
+    
+    .logo__main {
+        margin-right: 0;  
+    
+        color: $Text-title-black;
+    
+        Font-family: Raleway, sans-serif;
+        font-weight: 700;
+        Font-size: 24px;
+        line-height: 1.16;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+
+   // tablet
+   @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    }
+// desktop
+    @media screen and (min-width: 1170px) {
+        margin-right: 93px;
+        Font-size: 26px;
+        
+    }
+    }
+    
+    .logo__accent {
+    
+        color: $Logo-accent;
+    }
+    

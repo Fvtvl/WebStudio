@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+<!-- хедер -->
+<header>
+    <div class="container">
+
+<!-- мобільне меню -->
+    <div class="mobile" id="mobile" data-menu>
+        <ul class="mobile__first">
+            <li class="mobile__item"><a href="./mainBEM.html" class="mobile__link">Студия </a></li>
+            <li class="mobile__item"><a href="./portfolioBEM.html" class="mobile__link current">Портфолио</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
+        </ul>
+    
+        <ul class="mobile__secondary">
+            <li class="mobile-secondary__item">
+            <a href="" class="mobile__link mobile__link--number">+38 096 111 11 11</a></li>
+                
+            <li class="mobile-secondary__item">
+            <a href="" class="mobile__link mobile__link--email">info@devstudio.com</a></li>
+    
+        <ul class="mobile-media">
+            <li class="mobile-media__item"><a href="" class="mobile-media__link">Instagram</a></li>
+            <li class="mobile-media__item"><a href="" class="mobile-media__link">Twitter</a></li>
+            <li class="mobile-media__item"><a href="" class="mobile-media__link">Facebook</a></li>
+            <li class="mobile-media__item"><a href="" class="mobile-media__link">LinkedIn</a></li>
+        </ul>
+    </div>
+
+<!-- логотип -->
+<nav class="logo">
+<a href="" class="logo__main"><span class="logo__accent">Web</span>Studio</a>
+
+<!-- кнопка мобільного меню -->
+<button type="button" class="burger__icon" 
+    aria-expanded="false"
+    aria-controls="mobile"
+    data-menu-button>
+    <svg class="burger__svg" 
+        width="40" 
+        height="40" 
+        aria-label="Переключатель мобильного меню">
+        <use class="svg__menu"  href="./svg-set.svg#icon-burger_menu"></use>
+        <use class="svg__close" href="./svg-set.svg#icon-burger_close"></use>
+        </svg>
+</button>
+
+<!-- навігація -->
+    <ul class="main-nav">
+        <li class="main-nav__item"><a href="./mainBEM.html" class="main-nav__link">Студия</a></li>
+        <li class="main-nav__item"><a href="./portfolioBEM.html" class="main-nav__link current">Портфолио</a></li>
+        <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
+    </ul>
+    
+    <ul class="auth-nav">
+
+        <li class="auth-nav__item">
+        <a href="" class="auth-nav__link"><div class="auth-nav__icon">
+            <svg class="auth-nav__svg" width="16" height="12">
+            <use href="./svg-set.svg#icon-mail"></use>
+            </svg></div>info@devstudio.com</a></li>
+
+        <li class="auth-nav__item"><a href="" class="auth-nav__link auth-nav__link--number">
+            <div class="auth-nav__icon">
+            <svg class="auth-nav__svg" width="10" height="16">
+            <use href="./svg-set.svg#icon-phone"></use>
+            </svg></div>+38 096 111 11 11</a></li>
+    </ul>
+    </div>
+    </nav>
+</header>
+
+<!-- сортирування -->
+
+<main>
+    <section>
+    <h1 class="title-hide">Класификация работ</h1>
+    <div class="container">
+    <ul class="sort">
+        <li class="sort__item"><button type="button" class="sort__button">Все</button></li>
+        <li class="sort__item"><button type="button" class="sort__button">Веб-сайты</button></li>
+        <li class="sort__item"><button type="button" class="sort__button">Приложение</button></li>
+        <li class="sort__item"><button type="button" class="sort__button">Дизайн</button></li>
+        <li class="sort__item"><button type="button" class="sort__button">Маркетинг</button></li>
+    </ul>
+    </div>
+
+<!-- галерея -->
+
+<div class="container">
+    <ul class="galery">
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img1.webp 1x,
+                        ./images/1170img1x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img1.jpg 1x,
+                        ./images/1170img1x2.jpg 2x"
+                        media="(min-width: 1170px)">              
+        <!-- tablet -->
+        <source srcset="./images/768img1.webp 1x,
+                        ./images/768img1x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img1.jpg 1x,
+                        ./images/768img1x2.jpg 2x"
+                        media="(min-width: 768px)"> 
+        <!-- mobile -->
+        <source srcset="./images/480img1.webp 1x,
+                        ./images/480img1x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img1.jpg 1x,
+                                    ./images/480img1x2.jpg 2x" alt="">
+        </picture>
+
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>
+              
+        <div class="galery__name">
+        <h2 class="galery__title">Технокряк</h2>
+        <p class="galery__text">Веб-сайт</p>
+        </div></a></li>
+    
+    
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img2.webp 1x,
+                        ./images/1170img2x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img2.jpg 1x,
+                        ./images/1170img2x2.jpg 2x"
+                        media="(min-width: 1170px)">   
+        <!-- tablet -->
+        <source srcset="./images/768img2.webp 1x,
+                        ./images/768img2x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img2.jpg 1x,
+                        ./images/768img2x2.jpg 2x"
+                        media="(min-width: 768px)">
+                                
+        <!-- mobile -->
+        <source srcset="./images/480img2.webp 1x,
+                        ./images/480img2x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img2.jpg 1x,
+                                    ./images/480img2x2.jpg 2x" alt="">
+        </picture>
+
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>
+                    
+        <div class="galery__name">
+        <h2 class="galery__title">Постер New Orlean vs Golden Star</h2>
+        <p class="galery__text">Дизайн</p>
+        </div></a></li>
+    
+    
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img3.webp 1x,
+                        ./images/1170img3x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img3.jpg 1x,
+                        ./images/1170img3x2.jpg 2x"
+                        media="(min-width: 1170px)">   
+        <!-- tablet -->
+        <source srcset="./images/768img3.webp 1x,
+                        ./images/768img3x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img3.jpg 1x,
+                        ./images/768img3x2.jpg 2x"
+                        media="(min-width: 768px)">
+        <!-- mobile -->
+        <source srcset="./images/480img3.webp 1x,
+                        ./images/480img3x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img3.jpg 1x,
+                                    ./images/480img3x2.jpg 2x" alt="">
+        </picture>
+
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>
+                    
+        <div class="galery__name">
+        <h2 class="galery__title">Ресторан Seafood</h2>
+        <p class="galery__text">Приложение</p>
+        </div></a></li>
+    
+    
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img4.webp 1x,
+                        ./images/1170img4x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img4.jpg 1x,
+                        ./images/1170img4x2.jpg 2x"
+                        media="(min-width: 1170px)">   
+        <!-- tablet -->
+        <source srcset="./images/768img4.webp 1x,
+                        ./images/768img4x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img4.jpg 1x,
+                        ./images/768img4x2.jpg 2x"
+                        media="(min-width: 768px)">
+        <!-- mobile -->
+        <source srcset="./images/480img4.webp 1x,
+                        ./images/480img4x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img4.jpg 1x,
+                                    ./images/480img4x2.jpg 2x" alt="">
+        </picture>
+
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>
+                    
+        <div class="galery__name">
+        <h2 class="galery__title">Проект Prime</h2>
+        <p class="galery__text">Маркетинг</p>
+        </div></a></li>
+    
+    
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img5.webp 1x,
+                        ./images/1170img5x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img5.jpg 1x,
+                        ./images/1170img5x2.jpg 2x"
+                        media="(min-width: 1170px)">   
+        <!-- tablet -->
+        <source srcset="./images/768img5.webp 1x,
+                        ./images/768img5x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img5.jpg 1x,
+                        ./images/768img2x2.jpg 2x"
+                        media="(min-width: 768px)">
+        <!-- mobile -->
+        <source srcset="./images/480img5.webp 1x,
+                        ./images/480img5x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img5.jpg 1x,
+                                    ./images/480img5x2.jpg 2x" alt="">
+        </picture>
+
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>
+                    
+        <div class="galery__name">
+        <h2 class="galery__title">Проект Boxes</h2>
+        <p class="galery__text">Приложение</p>
+        </div></a></li>
+    
+    
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img6.webp 1x,
+                        ./images/1170img6x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img6.jpg 1x,
+                        ./images/1170img6x2.jpg 2x"
+                        media="(min-width: 1170px)">   
+        <!-- tablet -->
+        <source srcset="./images/768img6.webp 1x,
+                        ./images/768img6x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img6.jpg 1x,
+                        ./images/768img6x2.jpg 2x"
+                        media="(min-width: 768px)">
+        <!-- mobile -->
+        <source srcset="./images/480img6.webp 1x,
+                        ./images/480img6x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img6.jpg 1x,
+                                    ./images/480img6x2.jpg 2x" alt="">
+        </picture>
+
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>                
+                    
+        <div class="galery__name">
+        <h2 class="galery__title">Inspiration has no Borders</h2>
+        <p class="galery__text">Веб-сайт</p>
+        </div></a></li>
+    
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img7.webp 1x,
+                        ./images/1170img7x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img7.jpg 1x,
+                        ./images/1170img7x2.jpg 2x"
+                        media="(min-width: 1170px)">   
+        <!-- tablet -->
+        <source srcset="./images/768img7.webp 1x,
+                        ./images/768img7x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img7.jpg 1x,
+                        ./images/768img7x2.jpg 2x"
+                        media="(min-width: 768px)">
+        <!-- mobile -->
+        <source srcset="./images/480img7.webp 1x,
+                        ./images/480img7x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img7.jpg 1x,
+                                    ./images/480img7x2.jpg 2x" alt="">
+        </picture>
+                    
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>                
+        
+        <div class="galery__name">
+        <h2 class="galery__title">Издание Limited Edition</h2>
+        <p class="galery__text">Дизайн</p>
+        </div></a></li>
+    
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img8.webp 1x,
+                        ./images/1170img8x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img8.jpg 1x,
+                        ./images/1170img8x2.jpg 2x"
+                        media="(min-width: 1170px)">   
+        <!-- tablet -->
+        <source srcset="./images/768img8.webp 1x,
+                        ./images/768img8x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img8.jpg 1x,
+                        ./images/768img8x2.jpg 2x"
+                        media="(min-width: 768px)">
+        <!-- mobile -->
+        <source srcset="./images/480img8.webp 1x,
+                        ./images/480img8x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img8.jpg 1x,
+                                    ./images/480img8x2.jpg 2x" alt="">
+        </picture>
+                    
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>                
+                    
+        <div class="galery__name">
+        <h2 class="galery__title">Проект LAB</h2>
+        <p class="galery__text">Маркетинг</p>
+        </div></a></li>
+    
+    
+        <li class="galery__item"><a href="" class="galery__link">
+        <div class="galery__box">
+        <picture>
+        <!-- desktop -->
+        <source srcset="./images/1170img9.webp 1x,
+                        ./images/1170img9x2.webp 2x" 
+                        type="image/webp"
+                        media="(min-width: 1170px)">
+        <source srcset="./images/1170img9.jpg 1x,
+                        ./images/1170img9x2.jpg 2x"
+                        media="(min-width: 1170px)">   
+        <!-- tablet -->
+        <source srcset="./images/768img9.webp 1x,
+                        ./images/768img9x2.webp 2x"
+                        type="image/webp"
+                        media="(min-width: 768px)"/>
+        <source srcset="./images/768img9.jpg 1x,
+                        ./images/768img9x2.jpg 2x"
+                        media="(min-width: 768px)">
+        <!-- mobile -->
+        <source srcset="./images/480img9.webp 1x,
+                        ./images/480img9x2.webp 2x"
+                        type="image/webp">
+        <img class="galery__img" src="./images/480img9.jpg 1x,
+                                    ./images/480img9x2.jpg 2x" alt="">
+        </picture>
+                    
+        <p class="galery__hover"><span class="galery__span">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</span></p></div>                
+                    
+        <div class="galery__name">
+        <h2 class="galery__title">Growing Business</h2>
+        <p class="galery__text">Приложение</p>
+        </div></a></li>
+    </ul>
+    </div>
+    </section>
+</main>
+
+<!-- футер -->
+<footer class="page-footer">
+    <div class="container">
+    <ul class="footer-main">
+        <li class="footer-main__item">
+        <a href="" class=" logo__main page-footer__logo__main"><span class="logo__accent">Web</span>Studio</a>
+        
+        <address class="adress">
+        <span class="address__text">г. Киев, пр-т Леси Украинки, 26</span>
+        </address>
+        
+        <ul class="footer-nav">
+        <li class="footer-nav__item"><a href="" class="footer-nav__link">info@devstudio.com</a></li>
+        <li class="footer-nav__item"><a href="" class="footer-nav__link">+38 096 111 11 11</a></li>
+        </ul>
+        </li>
+<!-- футер медіа -->
+        <li class="foter-main__item">
+        <h2 class="join__title">Присоеденяйтесь</h2>
+        <ul class="media footer__media">
+        <li class="media__item media__item--grey"><a href="" class="media__link media__link--white">
+        <div class="media__icon">
+            <svg class="madia__svg" width="20" height="20">
+            <use href="./svg-set.svg#icon-instagram"></use>
+            </svg></div></a></li>
+                    
+        <li class="media__item media__item--grey"><a href="" class="media__link media__link--white">
+        <div class="media__icon">
+            <svg class="madia__svg" width="20" height="20">
+            <use href="./svg-set.svg#icon-twitter"></use>
+            </svg></div></a></li>
+                            
+        <li class="media__item media__item--grey"><a href="" class="media__link media__link--white">
+        <div class="media__icon">
+            <svg class="madia__svg" width="20" height="20">
+            <use href="./svg-set.svg#icon-facebook"></use>
+            </svg></div></a></li>
+                        
+        <li class="media__item media__item--grey"><a href="" class="media__link media__link--white">
+        <div class="media__icon">
+            <svg class="madia__svg" width="20" height="20">
+            <use href="./svg-set.svg#icon-linkedin"></use>
+            </svg></div></a></li>
+                    
+        </ul>
+        </li>
+                  
+<!-- футер інпут -->
+    <form class="footer-auth">
+        <label class="mail__label">
+        <span class="mail__title">Подпишитесь на рассылку</span>
+        <input class="mail__input" type="email" placeholder="E-mail"></label>
+            
+        <div class="footer-button">
+        <button type="submit" class="mail__button"><span class="mail__span">Подписаться</span>
+            <div class="mail__icon">
+            <svg class="mail__svg" width="24" height="24" >
+            <use href="./svg-set.svg#icon-send"></use>
+            </svg></div></button>
+        </div>
+</form>                  
+</div>
+</footer>
+<script src="./js/menu.js"></script>
+</body>
+</html>

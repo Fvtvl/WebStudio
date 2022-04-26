@@ -1,0 +1,114 @@
+.footer-auth {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+// desktop
+    @media screen and (min-width: 1170px) {
+        display: flex;
+        margin-left: auto;      
+        margin-right: 0;    
+}
+}
+
+.mail__label {
+    text-align: start;
+    margin-top: 72px;
+}
+
+.mail__input {
+    margin-top: 20px;
+    display: block;
+   
+    max-width: 450px;
+    height: 50px;
+    padding-left: 16px;
+    
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: $Text-main-white;
+    background-color: $bgc-footer-dgrey;
+
+// mobile
+@media screen and (max-width: 480px) {
+    width: 100%;
+}
+// mobile
+@media screen and (min-width: 480px) {
+    width: 450px;
+}
+// desktop
+    @media screen and (min-width: 1170px) {
+    width: 358px;
+    margin-left: 0;
+}
+}
+
+.mail__title {
+    color: $Text-main-white;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-button {
+    justify-content: center;
+    display: inline-block;
+    margin-top: 20px;
+    
+// desktop
+    @media screen and (min-width: 1170px) {
+    margin-top: 110px;
+    margin-left: 12px;
+}
+}
+
+.mail__button {
+
+    display: flex;
+    min-width: 200px;
+    height: 50px;
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+
+    color: $Text-main-white;
+    background-color: $Logo-accent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+// desktop
+    @media screen and (min-width: 1170px) {     
+}
+}
+
+.mail__span {
+    margin-left: 29px;
+    margin-right: 10px;
+}
+
+.mail__icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.mail__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $Text-main-white;
+}
